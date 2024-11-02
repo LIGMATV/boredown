@@ -38,6 +38,7 @@ function addIdToHeadings() {
         const anchor = document.createElement('a');
         anchor.className = 'heading-anchor'; // Menambahkan class untuk styling
         anchor.href = `#${id}`; // Menetapkan href ke id
+        anchor.ariaLabel = 'Permalink anchor for heading'
         // Menambahkan anchor ke dalam heading
         heading.appendChild(anchor);
     });

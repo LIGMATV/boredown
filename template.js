@@ -6,6 +6,7 @@ function generateTemplate(frontmatter, content) {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="${frontmatter.description || "Simple way to render markdown documents by HTML with math"}">
         <title>${frontmatter.title || "Default Title"}</title>
         <style>
             html {
